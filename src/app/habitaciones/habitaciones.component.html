@@ -1,0 +1,16 @@
+<header>
+    <app-menu></app-menu>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-5 g-3">
+            <div class="col" *ngFor="let producto of productos">
+                <div class="card h-100">
+                    <h2>{{producto.nombre}}</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
