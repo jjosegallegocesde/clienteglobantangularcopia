@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HabitacionesService } from '../servicios/habitaciones.service';
 
 @Component({
   selector: 'app-habitaciones',
@@ -24,7 +25,7 @@ export class HabitacionesComponent implements OnInit {
 
   )
 
-  constructor() {
+  constructor(public Servicio:HabitacionesService) {
 
   }
 

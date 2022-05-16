@@ -10,6 +10,8 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 
+import {HttpClientModule} from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { HabitacionesComponent } from './habitaciones/habitaciones.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
